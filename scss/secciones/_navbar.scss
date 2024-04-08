@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .logo {
+        padding: 2rem 1rem;
+        img {
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+        }
+    }
+    .navbar-items {
+        display: flex;
+        gap: 30px;
+        padding: 1rem 3rem;
+
+        li {
+
+            a {
+                font-size: 17px;
+                color: #ffffff;
+            }
+        }
+    }
+
+}

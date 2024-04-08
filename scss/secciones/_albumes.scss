@@ -1,0 +1,62 @@
+@include propiedades;
+
+.albumes {
+    max-width: 1440px;
+    margin: 4rem auto;
+
+    .title-albumes {
+        color: #ffffff;
+        margin: 0 auto;
+        text-align: center;
+        h2 {
+            font-size: 9.2rem;
+            font-family: "Rubik Glitch", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+    .article-albumes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 3rem;
+        max-height: 600px;
+        .article-1 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            max-width: 740px;
+            padding: 4.6rem 2rem;
+            text-align: center;
+            border-radius: 3rem;
+            background-color: $color-4;
+            @include border;
+            h2 {
+                color: #ffffff;
+                font-family: "Rubik Glitch", system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 5rem;
+            }
+            p {
+                color: #ffffff;
+                font-size: 2rem;
+            } 
+        }
+        .article-2 {
+            @extend .article-1;
+        }
+        .article-3 {
+            @extend .article-1;
+        }
+    }
+    .article-iframe {
+        padding: 2rem 3rem;
+
+        iframe {
+            width: 100%;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+    }
+}

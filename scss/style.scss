@@ -1,0 +1,10 @@
+@import "./utilities/_variables.scss";
+@import "./utilities/resets";
+@import "./mixing/_mixing.scss";
+
+//Pagina
+@import "./secciones/navbar.scss";
+@import "./secciones/header.scss";
+@import "./secciones/albumes.scss";
+@import "./secciones/sobre-mi.scss";
+@import "./secciones/redes.scss";

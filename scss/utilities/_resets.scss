@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, rgba(77,25,77,1) 10%, rgba(62,31,71,1) 20%, rgba(49,34,68,1) 30%, rgba(39,38,64,1) 40%, rgba(33,47,69,1) 50%, rgba(27,58,75,1) 60%, rgba(20,69,82,1) 70%, rgba(11,82,91,1) 80%, rgba(6,90,96,1) 90%, rgba(0,100,102,1) 100%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

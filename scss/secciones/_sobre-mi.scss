@@ -1,0 +1,71 @@
+.sobre-mi {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .sobre-mi-title {
+        color: #ffffff;
+        margin: 6rem auto;
+        text-align: center;
+
+        h2 {
+            font-size: 10vh;
+            font-family: "Rubik Glitch", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+    .sobre-mi-articles-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+
+        .sobre-mi-1 {
+            text-align: center;
+            max-width: 700px;
+            flex-grow: 1;
+            padding: 0 6rem 0 0;
+
+            p {
+                font-size: 2rem;
+                color: #ffffff;
+            }
+        }
+
+        .sobre-mi-1-img {
+            max-width: 600px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .sobre-mi-articles-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        padding: 3rem;
+
+        .sobre-mi-2 {
+            text-align: center;
+            max-width: 700px;
+            flex-grow: 1;
+            padding: 0 0 0 6rem;
+
+            p {
+                font-size: 2rem;
+                color: #ffffff;
+            }
+        }
+
+        .sobre-mi-2-img {
+            max-width: 600px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+} 
