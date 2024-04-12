@@ -1,0 +1,32 @@
+footer {
+    max-width: 1440px;
+    margin: 5rem auto;
+    padding: 3rem 0;
+    border-top: 2px solid gray;
+    opacity: 0.8;
+
+    .footer-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        padding: 2rem;
+
+        .sub-menu {
+            font-size: 1.6rem;
+            color: white;
+            opacity: 0.7;
+        }
+
+        .logo-letras {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            color: white;
+            h2 {
+                font-size: 6rem;
+                text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+}

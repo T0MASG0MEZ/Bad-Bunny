@@ -50,3 +50,13 @@
         filter: blur(1.5rem);
     }
 }
+
+// text style 
+@mixin text-title ($font-size){
+    font-size: $font-size;
+    color: #ffffff;
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+}

@@ -1,3 +1,5 @@
+@include propiedades;
+
 .sobre-mi {
     max-width: 1440px;
     margin: 0 auto;
@@ -12,6 +14,7 @@
             font-family: "Rubik Glitch", system-ui;
             font-weight: 400;
             font-style: normal;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
         }
     }
 
@@ -20,16 +23,65 @@
         align-items: center;
         justify-content: center;
         padding: 3rem;
+        margin: 0 2rem;
 
         .sobre-mi-1 {
             text-align: center;
             max-width: 700px;
             flex-grow: 1;
-            padding: 0 6rem 0 0;
+            background: $color-5;
+            margin: 0 5rem;
+            padding: 4rem;
+            position: relative;
+            transition: all .3s ease-in-out;
+            border-radius: 2rem;
 
             p {
                 font-size: 2rem;
                 color: #ffffff;
+                opacity: .5;
+            }
+
+            p::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-right: 5px solid transparent;
+                transition: all .5s ease-in-out;
+                border-radius: 1rem;
+            }
+
+            p::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 5px solid transparent;
+                border-left: 5px solid transparent;
+                transition: all .5s ease-in-out;
+                border-radius: 1rem;
+            }
+        }
+
+        .sobre-mi-1:hover p::before,
+        .sobre-mi-1:hover p::after {
+            border-color: $color-1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sobre-mi-1:hover {
+            background-color: $color-2;
+            cursor: pointer;
+
+            p {
+                opacity: 1;
             }
         }
 
@@ -38,25 +90,85 @@
 
             img {
                 width: 100%;
+                max-height: 400px;
+                border-radius: 100%;
+                transition: all .3s;
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+                &:hover {
+                    border-radius: 10%;
+                    transform: scale(1.12);
+                    box-shadow: none;
+                }
             }
         }
     }
+
     .sobre-mi-articles-left {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row-reverse;
         padding: 3rem;
+        margin: 0 2rem;
 
         .sobre-mi-2 {
             text-align: center;
             max-width: 700px;
             flex-grow: 1;
-            padding: 0 0 0 6rem;
+            background: $color-5;
+            margin: 0 5rem;
+            padding: 4rem;
+            position: relative;
+            transition: all .3s ease-in-out;
+            border-radius: 2rem;
 
             p {
                 font-size: 2rem;
                 color: #ffffff;
+                opacity: .5;
+            }
+
+            p::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-right: 5px solid transparent;
+                transition: all .4s ease-in-out;
+                border-radius: 1rem;
+            }
+
+            p::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 5px solid transparent;
+                border-left: 5px solid transparent;
+                transition: all .4s ease-in-out;
+                border-radius: 1rem;
+            }
+        }
+
+        .sobre-mi-2:hover p::before,
+        .sobre-mi-2:hover p::after {
+            border-color: $color-1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sobre-mi-2:hover {
+            background-color: $color-2;
+            cursor: pointer;
+
+            p {
+                opacity: 1;
             }
         }
 
@@ -65,7 +177,17 @@
 
             img {
                 width: 100%;
+                max-height: 400px;
+                border-radius: 100%;
+                transition: all .3s;
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+                &:hover {
+                    border-radius: 10%;
+                    transform: scale(1.12);
+                    box-shadow: none;
+                }
             }
         }
     }
-} 
+}

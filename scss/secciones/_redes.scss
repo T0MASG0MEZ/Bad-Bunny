@@ -1,35 +1,201 @@
+@include propiedades;
+
 .redes {
     max-width: 1440px;
-    margin: 2rem auto;
-    padding: 5rem 0;
-
-    .redes-title {
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex: 1;
+    .redes-sociales {
         display: flex;
-        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 4rem;
+        padding: 3rem;
+        .redes-title {
 
-        h2 {
-            font-size: 7rem;
-            color: #ffffff;
-            font-family: "Rubik Glitch", system-ui;
-            font-weight: 400;
-            font-style: normal;
+            h2 {
+                @include text-title (6rem);
+            }
         }
-    }
+        .title-redes-musica {
 
-    .box-redes {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin: 6rem;
-        
-        .instagram {
-            
-            a {
+            h2 {
+                @include text-title(4rem);
+            }
+        }
+        .box-redes {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            transition: all .2s ease-in-out;
+
+            .instagram {
+                padding: 4rem;
+                margin: 2rem;
+                max-width: 180px;
+                max-height: 229px;
+                border-radius: 10rem;
+                transition: all .2s ease-in-out;
+                position: relative;
                 
+                .box-instagram {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    
+                    
+                    svg {
+                        width: 100%;
+                    }
+                    p {
+                        font-size: 2rem;
+                        color: white;
+                        padding: 1rem;
+                        flex-grow: 1;
+                        visibility: hidden;
+                    }
+                }
+            }
+            .instagram:hover {
+                @include border;
+                background-color: $color-4;
+                border-radius: 2.2rem;
+                
+                .box-instagram {
+                    svg {
+                        fill: $instagram;
+                    }
+                    p {
+                        visibility: visible;
+                    }
+                }
+            }
+        .x {
+            @extend .instagram;
+            
+            .box-x {
+                @extend .box-instagram;
+            }
+        }
+        .x:hover {
+
+            .box-instagram {
                 svg {
-                    fill:tomato;
+                    fill: $x;
                 }
             }
         }
-    } 
+        .facebook {
+            @extend .instagram;
+            
+            .box-facebook {
+                @extend .box-instagram;
+            }
+        }
+        .facebook:hover {
+
+            .box-facebook {
+                svg {
+                    fill: $facebook;
+                }
+            }
+        }
+        .youtube {
+            @extend .instagram;
+            
+            .box-youtube {
+                @extend .box-instagram;
+            }
+        }
+        .youtube:hover {
+
+            .box-youtube {
+                svg {
+                    fill: $youtube;
+                }
+            }
+        }
+        .youtube-music {
+            @extend .instagram;
+            
+            .box-youtube {
+                @extend .box-instagram;
+            }
+        }
+        .youtube-music:hover {
+
+            .box-youtube {
+                svg {
+                    fill: $youtube;
+                }
+            }
+        }
+        .dezzer {
+            @extend .instagram;
+            
+            .box-dezzer {
+                @extend .box-instagram;
+            }
+        }
+        .dezzer:hover {
+
+            .box-youtube {
+                svg {
+                    fill: $youtube;
+                }
+            }
+        }
+        .dezzer {
+            @extend .instagram;
+            
+            .box-dezzer {
+                @extend .box-instagram;
+            }
+        }
+        .dezzer:hover {
+
+            .box-dezzer {
+                svg {
+                    fill: $dezzer;
+                }
+            }
+        }
+        .spotify {
+            @extend .instagram;
+            
+            .box-spotify {
+                @extend .box-instagram;
+            }
+        }
+        .spotify:hover {
+
+            .box-spotify {
+                svg {
+                    fill: $spotify;
+                }
+            }
+        }
+        .apple-music {
+            @extend .instagram;
+            
+            .box-apple-music {
+                @extend .box-instagram;
+            }
+        }
+        .apple-music:hover {
+
+            .box-apple-music {
+                svg {
+                    fill: $apple-music;
+                }
+            }
+        }
+        }
+    }
 }
